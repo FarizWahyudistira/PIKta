@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background with Bottom Navigation</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            <header class="header">
+                <a href="#" class="logo">KELOMPOK SATU</a>
+                <nav class="navbar">
+                    <a href="#" class="active">HOME</a>
+                    <a href="#abt-us">ABOUT US</a>
+                    <a href="/index2.html">MATERI</a>
+                </nav>
+            </header>
+
+    <div class="hero">
+        <!-- Radio buttons for selecting video -->
+        <input type="radio" name="video" id="radio1" class="video-selector" checked>
+        <input type="radio" name="video" id="radio2" class="video-selector">
+        <input type="radio" name="video" id="radio3" class="video-selector">
+        <input type="radio" name="video" id="radio4" class="video-selector">
+
+        <!-- Hidden checkbox for popup -->
+        <input type="checkbox" id="popup-trigger">
+
+        <!-- Video backgrounds -->
+        <div class="videos">
+            <video id="video1" class="video-background" src="word2.mp4" autoplay loop muted></video>
+            <video id="video2" class="video-background" src="excel2.mp4" autoplay loop muted></video>
+            <video id="video3" class="video-background" src="database2.mp4" autoplay loop muted></video>
+            <video id="video4" class="video-background" src="htmlcss2.mp4" autoplay loop muted></video>
+        </div>
+
+        <!-- Content -->
+        <div class="content-container">
+            <div class="content">
+                <h1></h1>
+                <p></p>
+                <label for="popup-trigger" class="learn-label">Learn</label>
+            </div>
+        </div>
+
+        <!-- Popup Overlay -->
+        <label for="popup-trigger" class="overlay">
+            <div class="popup">
+                <div class="close">
+                    <label class="close-label" for="popup-trigger">Close ✖</label>
+                </div>
+                <h2>Gambar Galeri</h2>
+                <!-- Popup Content -->
+                <img src="image1.png" alt="Gambar 1">
+                <img src="image2.png" alt="Gambar 2">
+                <img src="image3.png" alt="Gambar 3">
+            </div>
+        </label>
+
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <label for="radio1" id="MSWORDNAV">MS Word</label>
+            <label for="radio2" id="EXCELNAV">EXCEL</label>
+            <label for="radio3" id="DATABASENAV">DATABASE</label>
+            <label for="radio4" id="HTMLCSSNAV">HTML & CSS</label>
+        </div>
+    </div>
+</body>
+</html>
